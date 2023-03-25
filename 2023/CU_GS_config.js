@@ -84,15 +84,15 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
-    { "name": "Crossed Cable",
-      "code": "acc",
-      "gsCol": "autoCrossedCable",
-      "type": "bool"
+    { "name": "Game Pieces Missed",
+      "code": "gamePiecesMissed",
+      "gsCol": "gamePiecesMissed",
+      "type": "counter"
     },
-    { "name": "Crossed Charging Station",
-      "code": "acs",
-      "gsCol": "autoCrossedChargingStation",
-      "type": "bool"
+    { "name": "Game Pieces Scored",
+      "code": "gamePiecesScored",
+      "gsCol": "gamePiecesScored",
+      "type": "counter"
     },
     { "name": "Mobility?",
       "code": "am",
@@ -113,14 +113,8 @@ var config_data = `
     }
   ],
   "teleop": [
-    { "name": "Cycle Timer",
-      "code": "tct",
-      "gsCol": "cycleTimes",
-      "type": "cycle"
-    },
     { "name": "Grid Scoring",
       "code": "tsg",
-      "gsCol": "gridScoring",
       "type": "clickable_image",
       "filename": "2023/grid_image.png",
       "dimensions": "9 4",
@@ -128,13 +122,7 @@ var config_data = `
       "toggleClick": "true",
       "showFlip": "false",
       "showUndo": "false",
-      "shape": "circle 12 black red true",
-      "cycleTimer": "tct"
-    },
-    { "name": "Feeder Count<br>(Fed another bot)",
-      "code": "tfc",
-      "gsCol": "feedCount",
-      "type": "counter"
+      "shape": "circle 12 black red true"
     },
     { "name": "Was Defended",
       "code": "wd",
@@ -219,11 +207,6 @@ var config_data = `
         "x": "Did not play defense"
       },
       "defaultValue": "x"
-    },
-    { "name": "Swerve drive?",
-      "code": "sd",
-      "gsCol": "swerveDrive",
-      "type": "bool"
     },
     { "name": "Speed Rating",
       "code": "sr",
