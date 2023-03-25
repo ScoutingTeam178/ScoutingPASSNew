@@ -75,8 +75,12 @@ var config_data = `
       "showUndo": "false",
       "shape": "circle 12 black red true"
     },
-    { "name": "Game Pieces attempted<br>(Scored and Missed)",
-      "code": "aa",
+    { "name": "Game Pieces Missed",
+      "code": "gamePiecesMissed",
+      "type": "counter"
+    },
+    { "name": "Game Pieces Scored",
+      "code": "gamePiecesScored",
       "type": "counter"
     },
     { "name": "Mobility?",
@@ -106,14 +110,6 @@ var config_data = `
       "showFlip": "false",
       "showUndo": "false",
       "shape": "circle 12 black red true"
-    },
-    { "name": "Feeder Count<br>(Fed another bot)",
-      "code": "tfc",
-      "type": "counter"
-    },
-    { "name": "Was Fed<br>Game Pieces",
-      "code": "wf",
-      "type": "bool"
     },
     { "name": "Was Defended",
       "code": "wd",
