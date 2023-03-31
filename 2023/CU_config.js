@@ -14,7 +14,7 @@ var config_data = `
     { "name": "Event",
       "code": "e",
       "type": "event",
-      "defaultValue": "2023mawne",
+      "defaultValue": "2023cthar",
       "required": "true",
       "disabled": "true"
     },
